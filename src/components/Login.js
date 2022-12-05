@@ -45,7 +45,6 @@ export default function Login() {
       console.log(data);
       if (data) toast("Login Success!");
 
-      document.cookie = `JWT_TOKEN=${data.JWT_TOKEN}`;
       document.cookie = `email=${data.email}`;
 
       window.localStorage.setItem("user", JSON.stringify(data));
