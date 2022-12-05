@@ -7,13 +7,22 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 
 import Protected from "./util/Protected";
-
+import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Routes>
+        <Route
+          path="/"
+          element={
+            <Link to="/login" className="text-green underline">
+              {" "}
+              Go to Login
+            </Link>
+          }
+        ></Route>
         <Route
           path="/dashboard"
           element={
