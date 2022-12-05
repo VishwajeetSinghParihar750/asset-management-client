@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -38,7 +38,7 @@ function AddAssetForm(props) {
     };
 
     getData();
-  }, [currentTeam]);
+  }, [currentTeam, teamId, dispatch]);
 
   let handleSubmitClick = async () => {
     try {

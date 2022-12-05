@@ -1,21 +1,16 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import WrappedMessages from "./WrappedMessages";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginSliceActions } from "../../store/loginSlice";
 
 function TopSection(props) {
   let navigate = useNavigate();
   let dispatch = useDispatch();
-
-  let user = useSelector((state) => state.login.user);
-
-  let messages = user.messages;
-  let messagesCount = messages ? messages.length : 0;
 
   let handleLogout = async () => {
     try {

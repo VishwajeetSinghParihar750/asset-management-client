@@ -3,8 +3,6 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
-import { useSelector } from "react-redux";
-
 import AddAssetForm from "./AddAssetForm";
 
 function WrappedAddAssetsForm(props) {

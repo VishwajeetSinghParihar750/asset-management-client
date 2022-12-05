@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import WrappedAssetsForm from "./CreateAssetForm/WrappedAssetsForm";
 import WrappedAddAssetsForm from "./AddAssetForm/WrappedAddAssetForm";
 

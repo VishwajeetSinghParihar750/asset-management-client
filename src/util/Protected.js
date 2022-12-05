@@ -13,8 +13,7 @@ function Protected({ children }) {
           { withCredentials: true }
         );
 
-        // console.log("data : ", data);
-        setLoggedIn(() => true);
+        if (data) setLoggedIn(() => true);
       } catch (e) {
         console.log(e);
         setLoggedIn(() => false);

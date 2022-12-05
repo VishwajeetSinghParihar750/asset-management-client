@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -36,7 +36,7 @@ function Assets(props) {
     };
 
     getAssets();
-  }, [currentTeam]);
+  }, [currentTeam, dispatch]);
 
   return (
     <div className="flex flex-col p-10 w-full ">
@@ -91,9 +91,9 @@ function Assets(props) {
                 </tr>
               </thead>
 
-              {assets && assets.filter((item) => item.count != 0) ? (
+              {assets && assets.filter((item) => item.count !== 0) ? (
                 assets
-                  .filter((item) => item.count != 0)
+                  .filter((item) => item.count !== 0)
                   .map((assetObj, i) => (
                     <tbody className="divide-y divide-gray-200" key={i}>
                       <tr>

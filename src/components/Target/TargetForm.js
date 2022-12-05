@@ -1,13 +1,11 @@
-import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginSliceActions } from "../../store/loginSlice";
 
 function TargetForm(props) {
-  let activeUser = useSelector((state) => state.login.user);
   let dispatch = useDispatch();
 
   let name = useRef("");

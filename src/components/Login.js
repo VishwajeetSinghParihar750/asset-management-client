@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginSliceActions } from "../store/loginSlice";
 
 export default function Login() {
@@ -13,7 +13,6 @@ export default function Login() {
   let dispatch = useDispatch();
 
   // user state
-  let user = useSelector((state) => state.login.user);
 
   let email = useRef("");
   let password = useRef("");
