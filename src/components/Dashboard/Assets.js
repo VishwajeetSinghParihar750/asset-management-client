@@ -120,6 +120,9 @@ function Assets(props) {
                         <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
                           {assetObj.asset?.price}
                         </td>
+                        <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
+                          {assetObj?.count}
+                        </td>
 
                         <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
                           <a
