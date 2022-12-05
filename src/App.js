@@ -13,8 +13,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div>
-      this is main page
-      {/* <Routes>
+      <Routes>
         <Route
           path="/"
           element={
@@ -66,7 +65,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
