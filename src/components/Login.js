@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { loginSliceActions } from "../store/loginSlice";
 
 export default function Login() {
-  console.log(process.env.REACT_APP_API);
+  console.log("process.env.REACT_APP_API :", process.env.REACT_APP_API);
   let navigate = useNavigate();
 
   let dispatch = useDispatch();
