@@ -13,12 +13,12 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Routes>
+      this is main page
+      {/* <Routes>
         <Route
           path="/"
           element={
             <Link to="/login" className="text-green underline">
-              {" "}
               Go to Login
             </Link>
           }
@@ -66,7 +66,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
